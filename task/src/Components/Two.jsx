@@ -12,8 +12,8 @@ function Two({item, handleDelete}) {
             <p>{item.exp}</p>
             <Row>
                 <Col></Col>
-                <Col><Link className='btn btn-success' to='/edit'>Edit</Link></Col>
-                <Col><Button className='btn btn-success' onClick={()=>handleDelete(item)}>Delete</Button></Col>
+                <Col xs={2}><Link className='btn btn-success' style={{borderRadius:'0',padding:'5px 30px'}} to={`/edit/${item.desc}`}>Edit</Link></Col>
+                <Col xs={1}><Button className='btn btn-danger' style={{borderRadius:'0'}} onClick={()=>handleDelete(item)}>Delete</Button></Col>
                 
             </Row>
 
