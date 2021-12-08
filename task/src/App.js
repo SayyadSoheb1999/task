@@ -38,7 +38,7 @@ const handleAdd =(e)=>{
        </div>
     <Switch>
       <Route path='/add'  ><AddCompo  handleAdd={handleAdd}/></Route>
-      <Route path='/edit/:desc' ><EditCompo  /></Route>
+      <Route path='/edit/:id' ><EditCompo  /></Route>
       <Route  path='/' ><One data={rdata} handleDelete={handleDelete}/></Route>
     </Switch>
     </BrowserRouter>
